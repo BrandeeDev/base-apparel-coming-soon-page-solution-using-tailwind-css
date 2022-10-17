@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+
+</head>
+<body>
+<div class=" container h-screen flex flex-col lg:mr-[830px] lg:ml-8 lg:ml-[171px] bg-gradient-to-r from-gradient_bg-start to-gradient_bg-end bg-gradient-to-r from-gradient_bg-start to-gradient_bg-end  ">
+    <div class="container ml-8 mt-8 lg:mt-[74px]  ">
+        <img class="object-left-top" src="images/logo.svg"/>
+    </div>
+    <div class=" container lg:absolute  lg:right-0 lg:h-full lg:w-[610px] ">
+        <picture>
+            <source media="(min-width:1024px)" srcset="./images/hero-desktop.jpg">
+            <source media="(max-width:1023px)" srcset="./images/hero-mobile.jpg">
+            <img class="mt-8 w-full h-full  ml-0 lg:mt-0"/>
+        </picture>
+    </div>
+    <div class="container mt-[64px] lg:mt-[136px]  lg:w-[445px] flex flex-col justify-center items-center lg:justify-start lg:items-start">
+        <div class="flex flex-col items-center justify-center  lg:justify-start lg:items-start">
+            <p class="base-heading text-heading-0 lg:text-[64px]  lg:leading-[64px]">WE'RE</p>
+            <p class="base-heading-1 text-heading-1 lg:text-[64px]  lg:leading-[64px]">COMING </p>
+            <p class="base-heading-1 text-heading-1 lg:text-[64px]  lg:leading-[64px]">SOON</p>
+        </div>
+        <p class="base-content text-text-content mx-8 lg:mx-0 lg:text-start justify-center items-center lg:justify-start lg:items-start  lg:text-[16px] lg:leading-7 lg:text-[16px]">
+            Hello fellow shoppers! We're currently building our new fashion store.
+            Add your email below to stay
+            up-to-date with announcements and our launch deals.</p>
+        <form
+                id="form-email"
+                class="flex items-center gap-2 border rounded-full lg:w-full mt-8 lg:mt-10 lg:gap-4"
+                action=""
+        >
+            <div class="relative w-full py-3 h-10 lg:h-16 lg:py-5">
+                <input
+                        id="email"
+                        class="peer input-style text-email_color-input w-full bg-transparent px-5 py-3 h-10  placeholder-style  outline-none rounded-full placeholder:text-primary-red-300 placeholder:text-sm placeholder:text-gray-300 lg:px-7 lg:py-4 lg:text-lg lg:placeholder:text-lg"
+                        type="email"
+                        placeholder="Email Address"
+                />
+
+                <img class=" absolute right-0  top-3 lg:top-4 lg:w-8 invisible peer-invalid:visible " src="./images/icon-error.svg" alt=""/>
+                <p class="invisible peer-invalid:visible input-error text-email_color-error lg:leading-7">Please provide a valid email address.</p>
+            </div>
+            <button
+                    type="submit"
+                    id="btn-submit"
+                    class="px-6 py-3 h-10 bg-gradient-to-r from-gradient_btn-start to-gradient_btn-end hover:drop-shadow-[-1rem_1.8rem_1.2rem_rgba(0,0,0,0.25)] hover:to-primary-red-200 rounded-full shadow-lg ml-auto lg:h-16 lg:px-14 lg:py-5"
+            >
+                <img class="w-auto" src="./images/icon-arrow.svg" alt="Submit"/>
+            </button>
+        </form>
+    </div>
+
+
+</div>
+</body>
+</html>

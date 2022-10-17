@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components{
+    .base-heading{
+        @apply font-josefin font-light  not-italic text-center  ;
+        font-size: 40px;
+        line-height: 42px;
+        letter-spacing: 11px;
+
+
+    }
+    .base-heading-1{
+        @apply font-josefin font-semibold not-italic  text-center  ;
+        font-size: 40px;
+        line-height: 42px;
+        letter-spacing: 11px;
+
+
+    }
+    .base-content{
+        @apply font-josefin font-normal not-italic text-center;
+        line-height: 22px;
+    }
+    .placeholder-style::placeholder {
+       @apply font-josefin font-normal not-italic text-sm  leading-7;
+    }
+    .input-style{
+        @apply font-josefin font-normal not-italic  text-sm  leading-7;
+    }
+    .input-error {
+        @apply font-josefin font-normal not-italic ;
+        font-size: 13px;
+        line-height: 13px;
+    }
+
+
+}
+
+
+
